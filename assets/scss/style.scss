@@ -18,14 +18,17 @@ body {
   .left-col {
     align-items: center;
     text-align: center;
+    padding: 0 !important; 
+    margin: 0 !important; 
+    width: 100%;
+  }
 
-    .main-text,
-    .sub-text {
-      margin-left: 0;
-      margin-right: 0;
-      padding: 0 1rem;
-      text-align: center;
-    }
+  .main-text,
+  .sub-text {
+    margin: 0 !important; 
+    padding: 0.5rem !important; 
+    width: 100% !important; 
+    text-align: center !important; 
   }
 }
 
@@ -53,7 +56,7 @@ body {
 
     .main-text {
       font-family: $font-main;
-      font-size: 2rem;
+      font-size: 1.9rem;
       font-weight: bold;
       margin-bottom: 1.5rem;
     }
