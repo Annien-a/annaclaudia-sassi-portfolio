@@ -32,6 +32,11 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  header.header-section .main-text {
+    font-size: 1.8rem !important;
+  }
+}
 .header-section {
   min-height: 80vh;
   display: grid;
@@ -56,7 +61,7 @@ body {
 
     .main-text {
       font-family: $font-main;
-      font-size: 1.9rem;
+      font-size: 2rem;
       font-weight: bold;
       margin-bottom: 1.5rem;
     }

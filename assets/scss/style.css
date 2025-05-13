@@ -76,6 +76,11 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  header.header-section .main-text {
+    font-size: 1.8rem !important;
+  }
+}
 
 .header-section {
   min-height: 80vh;
@@ -99,7 +104,7 @@ body {
 }
 .header-section .left-col .main-text {
   font-family: "MuseoModerno", sans-serif;
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
 }
