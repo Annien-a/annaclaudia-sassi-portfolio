@@ -1,0 +1,220 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #161616;
+  color: #fffdf6;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding-top: 70px;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.curriculum-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .curriculum-grid {
+    grid-template-columns: 1fr;
+    padding-inline: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+.left-column,
+.right-column {
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .left-column,
+  .right-column {
+    padding: 0;
+  }
+}
+.profile-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 2rem;
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .profile-image {
+    padding: 1rem;
+  }
+}
+h3 {
+  font-family: "MuseoModerno", sans-serif;
+  color: #44ee45;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.skills-section {
+  margin-top: 4rem;
+}
+
+.skills-section h3 {
+  margin-left: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    padding: 0;
+  }
+}
+.skill {
+  text-align: center;
+}
+
+.skill img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+}
+
+.skill p {
+  margin: 0;
+}
+
+.languages-section {
+  margin-top: 4rem;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .languages-section {
+    padding: 0;
+  }
+}
+.language {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.language p {
+  margin: 0 0 0.2rem;
+}
+
+.language progress {
+  width: 100%;
+  height: 1rem;
+  background-color: #333;
+}
+
+.language progress::-webkit-progress-bar {
+  background-color: #333;
+}
+
+.language progress::-webkit-progress-value {
+  background-color: #44ee45;
+}
+
+.name-section h1 {
+  font-size: 8rem;
+  font-family: "MuseoModerno", sans-serif;
+  font-weight: bold;
+  color: #44ee45;
+  margin-bottom: 0.5rem;
+}
+
+.intro-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 25rem;
+}
+
+@media (max-width: 768px) {
+  .intro-text {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .name-section {
+    display: none;
+  }
+}
+.mobile-name {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-name {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+  }
+  .mobile-name h1 {
+    font-size: 4rem;
+    font-family: "MuseoModerno", sans-serif;
+    font-weight: bold;
+    color: #44ee45;
+    margin-bottom: -4rem;
+  }
+}
+.experiences-section,
+.education-section {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.experiences-section h3,
+.education-section h3 {
+  margin-bottom: 1.3rem;
+}
+
+.experiences-section p,
+.education-section p {
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+
+.experiences-section h4,
+.education-section h4 {
+  font-size: 1.2rem;
+  color: rgba(255, 253, 246, 0.5137254902);
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .experiences-section,
+  .education-section {
+    margin-left: 0;
+    padding-inline: 0;
+  }
+}
+.education-section {
+  margin-top: 8.5rem;
+}
+
+@media (max-width: 768px) {
+  .education-section {
+    margin-top: 4rem;
+  }
+}/*# sourceMappingURL=styleCV.css.map */

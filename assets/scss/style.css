@@ -1,0 +1,356 @@
+a:hover, button:hover, .custom-clickable:hover {
+  cursor: url("images/gattino cursore.png"), auto;
+}
+
+body {
+  background-color: #161616;
+  color: #FFFDF6;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.custom-navbar {
+  background-color: #161616;
+  font-family: "MuseoModerno", sans-serif;
+}
+.custom-navbar .navbar-nav a {
+  font-size: 1.3rem;
+}
+.custom-navbar .navbar-brand img {
+  width: 30px !important;
+  height: auto !important;
+}
+.custom-navbar .nav-link {
+  color: #FFFDF6 !important;
+  margin: 0 15px;
+}
+.custom-navbar .logo-container {
+  margin-left: 20px;
+}
+.custom-navbar .navbar-toggler {
+  border: none;
+  background: transparent;
+}
+.custom-navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.custom-navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: none;
+  width: 30px;
+  height: 2px;
+  background-color: #FFFDF6;
+  position: relative;
+}
+.custom-navbar .navbar-toggler .navbar-toggler-icon::before, .custom-navbar .navbar-toggler .navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #FFFDF6;
+  left: 0;
+}
+.custom-navbar .navbar-toggler .navbar-toggler-icon::before {
+  top: -10px;
+}
+.custom-navbar .navbar-toggler .navbar-toggler-icon::after {
+  top: 10px;
+}
+
+.header-section {
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+}
+@media (max-width: 768px) {
+  .header-section {
+    grid-template-columns: 1fr;
+  }
+  .header-section .right-col {
+    order: -1;
+  }
+}
+.header-section .left-col {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header-section .left-col .main-text {
+  font-family: "MuseoModerno", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.header-section .left-col .highlight {
+  color: #44EE45;
+  background: linear-gradient(transparent 60%, #00290c 100%);
+  display: inline;
+}
+.header-section .left-col .sub-text {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .header-section .left-col .left-col .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 90%;
+  }
+  .header-section .left-col .custom-btn {
+    width: 100%;
+    max-width: none;
+  }
+}
+.header-section .left-col .custom-btn {
+  background-color: #44EE45;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #161616;
+  padding: 0.75rem 2rem;
+  font-family: "MuseoModerno", sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.header-section .left-col .custom-btn:hover {
+  background-color: #5bf05c;
+  transform: scale(1.05);
+}
+
+.secondary-btn {
+  background: transparent;                   
+  border: 3px solid #44EE45; 
+  font-family: "MuseoModerno", sans-serif;
+  margin-left: 3rem;
+  margin-right: 1rem;                 
+  color: #44EE45;                             
+  padding: 0.65rem 3rem;                      
+  font-weight: bold;                          
+  font-size: 1.1rem;                          
+  border-radius: 30px;                      
+  transition: background-color 0.3s ease, transform 0.2s ease;  
+  
+  &:hover {
+    background-color: rgba(68, 238, 69, 0.1);  
+    color: #44EE45;                          
+    transform: scale(1.05);                  
+  }
+}
+
+
+.header-section .right-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-section .right-col img {
+  max-width: 800px;
+  width: 100%;
+}
+
+.strip a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.strip h2 a:hover {
+  color: #FFFDF6; 
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio .highlight {
+  color: #44EE45;
+  background: linear-gradient(transparent 60%, #00290c 100%);
+  display: inline;
+}
+.portfolio .main-text {
+  font-family: "MuseoModerno", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+}
+.portfolio .strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 25vh;
+  overflow: hidden;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.portfolio .strip img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.3;
+  z-index: 0;
+  transition: object-position 0.3s ease;
+  transition: object-position 0.3s ease, -o-object-position 0.3s ease;
+}
+.portfolio .strip h2 {
+  position: relative;
+  font-size: 2rem;
+  font-family: "MuseoModerno", sans-serif;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+.portfolio .strip:hover h2 {
+  transform: scale(1.4);
+}
+@media (min-width: 768px) {
+  .portfolio .strip:nth-child(4) img {
+    -o-object-position: bottom;
+       object-position: bottom; /* Sposta l'immagine verso la parte superiore */
+  }
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 3rem 1rem 4rem;
+  background-color: #161616;
+}
+.page-wrapper .main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page-wrapper .main-content .intro-text {
+  font-size: 2rem;
+  color: #FFFDF6;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.page-wrapper .main-content .form-title {
+  font-family: "MuseoModerno", sans-serif;
+  color: #44EE45 !important;
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(transparent 60%, #00290c 100%);
+  display: inline-block;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.page-wrapper .main-content .contact-form {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.03);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+}
+.page-wrapper .main-content .contact-form .form-label {
+  font-weight: 500;
+}
+.page-wrapper .main-content .contact-form .form-control {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  color: #FFFDF6;
+}
+.page-wrapper .main-content .contact-form .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.2);
+  border-color: #FFFDF6;
+}
+.page-wrapper .main-content .contact-form textarea.form-control {
+  resize: none;
+}
+.page-wrapper .main-content .contact-form .btn {
+  background-color: #44EE45;
+  width: 100%;
+  color: #161616;
+  margin-top: 1.2rem;
+  font-family: "MuseoModerno", sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.page-wrapper .main-content .contact-form .btn:hover {
+  background-color: #5bf05c;
+  transform: scale(1.05);
+}
+
+.footer-section {
+  background-color: #161616;
+  color: #FFFDF6;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 0;
+  font-family: "Poppins", sans-serif;
+}
+.footer-section .social-icons {
+  margin-bottom: 0.5rem;
+}
+.footer-section .social-icons a {
+  color: #FFFDF6;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+.footer-section .footer-links {
+  display: flex;
+  justify-content: center;
+}
+.footer-section .footer-links a {
+  margin: 0 10px;
+  color: #FFFDF6;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
+
+.custom-navbar .navbar-nav .nav-link {
+  transition: transform 0.2s ease;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+  color: #44EE45 !important; 
+  transform: scale(1.1); 
+}
+
+.footer-section a {
+  transition: transform 0.2s ease;  
+}
+
+.footer-section a:hover {
+  transform: scale(1.1); 
+  color: #44EE45 !important;
+}
+
+.nav-link, .custom-btn, .navbar-brand, .footer-section a, .strip a, .secondary-btn {
+  cursor: pointer !important; 
+}
+
+.custom-navbar .navbar-brand img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.custom-navbar .navbar-brand:hover img {
+  transform: scale(1.2); 
+  filter: brightness(0) saturate(100%) invert(33%) sepia(28%) saturate(4132%) hue-rotate(81deg) brightness(204%) contrast(108%);
+}
+
+

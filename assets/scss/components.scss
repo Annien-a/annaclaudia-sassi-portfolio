@@ -1,0 +1,156 @@
+// NAVBAR
+.custom-navbar {
+  background-color: $bg-color;
+  font-family: $font-main;
+
+  .navbar-nav a {
+    font-size: 1.3rem;
+  }
+
+  .navbar-brand img {
+    width: 30px;
+    height: auto;  
+  }
+
+  .nav-link {
+    color: $text-color;
+    margin: 0 15px;
+  }
+
+  .logo-container {
+    margin-left: 20px;
+  }
+
+  .navbar-toggler {
+    border: none;
+    background: transparent;
+
+    &:focus {
+      box-shadow: none; 
+    }
+
+    .navbar-toggler-icon {
+      background-image: none;
+      width: 30px;
+      height: 2px;
+      background-color: $text-color;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: $text-color;
+        left: 0;
+      }
+
+      &::before {
+        top: -10px;
+      }
+
+      &::after {
+        top: 10px;
+      }
+    }
+  }
+}
+
+
+// FOOTER
+.footer-section {
+  background-color: $bg-color;
+  color: $text-color;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 0;
+  font-family: $font-body;
+
+  .social-icons {
+    margin-bottom: 0.5rem;
+
+    a {
+      color: $text-color;
+      margin: 0 10px;
+      font-size: 1.5rem;
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+
+    a {
+      margin: 0 10px;
+      color: $text-color;
+      text-decoration: none;
+    }
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $accent-color;
+    transform: scale(1.1);
+  }
+}
+
+
+.btn {
+  font-family: $font-main;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  padding: 0.75rem 2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// Bottone primario (Contatti, Invia, ecc.)
+.custom-btn {
+  background-color: $accent-color;
+  color: $bg-color;
+  
+  &:hover {
+    background-color: lighten(#44EE45, 5%);
+  }
+}
+
+// Bottone secondario (con bordo verde)
+.secondary-btn {
+  background: transparent;
+  border: 2px solid $accent-color; // Bordo verde
+  color: $accent-color; // Colore del testo verde
+  
+  &:hover {
+    background-color: rgba(68, 238, 69, 0.1); // Leggero background verde
+    color: $bg-color;
+  }
+}
+
+// Bottone per inviare il form (ad esempio, nella sezione contatti)
+.submit-btn {
+  background-color: $accent-color;
+  color: $bg-color;
+  width: 100%; // Pieno larghezza per il bottone invia
+  
+  &:hover {
+    background-color: lighten(#44EE45, 5%);
+  }
+}
+
