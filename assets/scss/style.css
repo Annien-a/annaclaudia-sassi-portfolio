@@ -58,6 +58,21 @@ body {
   top: 10px;
 }
 
+@media (max-width: 768px) {
+  .left-col {
+    align-items: center;
+    text-align: center;
+
+    .main-text,
+    .sub-text {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0 1rem;
+      text-align: center;
+    }
+  }
+}
+
 .header-section {
   min-height: 80vh;
   display: grid;
@@ -128,7 +143,7 @@ body {
   background: transparent;                   
   border: 3px solid #44EE45; 
   font-family: "MuseoModerno", sans-serif;
-  margin-left: 1rem;
+  margin-left: 0rem;
   margin-right: 1rem;                 
   color: #44EE45;                             
   padding: 0.65rem 3rem;                      

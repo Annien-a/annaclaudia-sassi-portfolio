@@ -46,8 +46,6 @@ p {
 .profile-image {
   width: 100%;
   aspect-ratio: 1/1;
-  height: auto;
-  display: block;
   -o-object-fit: cover;
      object-fit: cover;
   padding: 2rem;
@@ -219,9 +217,4 @@ h3 {
   .education-section {
     margin-top: 4rem;
   }
-}
-
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
 }
