@@ -68,7 +68,7 @@ body {
 
   .left-col .main-text,
   .left-col .sub-text {
-    margin: 0;
+    margin: 0 !important;
     padding: 0 1rem;
     text-align: center;
   }
