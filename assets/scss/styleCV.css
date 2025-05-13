@@ -46,6 +46,8 @@ p {
 .profile-image {
   width: 100%;
   aspect-ratio: 1/1;
+  height: auto;
+  display: block;
   -o-object-fit: cover;
      object-fit: cover;
   padding: 2rem;
@@ -144,7 +146,7 @@ h3 {
   font-family: "Poppins", sans-serif;
   font-size: 3rem;
   margin-top: 3rem;
-  margin-bottom: 10rem;
+  margin-bottom: 25rem;
 }
 
 @media (max-width: 768px) {
