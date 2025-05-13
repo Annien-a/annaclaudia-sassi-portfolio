@@ -151,7 +151,7 @@ h3 {
   font-family: $font-body;
   font-size: 3rem;
   margin-top: 3rem;
-  margin-bottom: 25rem;
+  margin-bottom: 10rem;
 }
 
 @media (max-width: 768px) {
@@ -229,4 +229,9 @@ h3 {
   .education-section {
     margin-top: 4rem;
   }
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }

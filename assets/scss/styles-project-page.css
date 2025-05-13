@@ -85,7 +85,6 @@ main.container {
   margin: 2rem;
   line-height: 1.5;
   font-size: 1.2rem;
-  text-align: justify;
 }
 @media (max-width: 768px) {
   .text-content {
