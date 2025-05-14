@@ -58,6 +58,12 @@ body {
   top: 10px;
 }
 
+@media (min-width: 769px) {
+  .custom-navbar .navbar-brand img {
+    width: 40px !important; /
+  }
+}
+
 @media (max-width: 768px) {
   .left-col {
     align-items: center;

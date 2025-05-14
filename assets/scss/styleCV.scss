@@ -140,7 +140,7 @@ h3 {
 }
 
 .name-section h1 {
-  font-size: 8rem;
+  font-size: 6rem;
   font-family:$font-main;
   font-weight: bold;
   color: $accent-color;
@@ -149,9 +149,9 @@ h3 {
 
 .intro-text {
   font-family: $font-body;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-top: 3rem;
-  margin-bottom: 25rem;
+  margin-bottom: 10rem;
 }
 
 @media (max-width: 768px) {
@@ -228,5 +228,71 @@ h3 {
 @media (max-width: 768px) {
   .education-section {
     margin-top: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .curriculum-grid {
+    grid-template-columns: 1fr;
+    padding-inline: 1rem;
+  }
+
+  .left-column,
+  .right-column {
+    padding: 0 1rem;
+  }
+
+  .name-section h1 {
+    font-size: 4rem;
+    word-break: break-word;
+  }
+
+  .intro-text {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+
+   .mobile-name {
+  padding: 0; 
+  margin: 0; 
+}
+  .mobile-name h1 {
+    margin: 0;
+    font-size: 3.2rem;
+    word-break: break-word;
+  }
+
+  .experiences-section,
+  .education-section {
+    padding: 0 1rem;
+  }
+}
+
+.intro-text.mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .intro-text.mobile {
+    display: block;
+    font-size: 1.6rem;
+    font-family: $font-body;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    padding: 0 1rem;
+    color: $text-color;
   }
 }

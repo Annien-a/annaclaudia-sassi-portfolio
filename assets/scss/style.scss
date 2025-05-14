@@ -134,8 +134,8 @@ body {
 
   .secondary-btn {
     background: transparent;
-    border: 2px solid #44EE45; 
-    color: #44EE45; 
+    border: 2px solid $accent-color; 
+    color: $accent-color; 
     padding: 0.75rem 2rem; 
     font-family: $font-main;
     font-weight: bold;
